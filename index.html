@@ -1,17 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Panda Fashion Brand :: Home Page</title>
-</head>
-<body>
-    <header>
-        <h1 class="text-4xl"> Be tha panda of the winter</h1>
+  </head>
+
+
+
+  <body>
+    <header class="bg-[#FFFBF0] px-10 py-8 md:px-32 ">
+      <!-- nav section  -->
+      <nav class="flex justify-between">
+        <div class="flex gap-5"><img src="./Resources/icons/pand logo.png  " alt="Panda our logo" class="w-12">
+           
+            <p class="text-black font-bold text-3xl"> <span class="text-[#A4BC46] font-bold text-3xl">Panda </span>Fashion</p>
+        </div>
+        <div class="hidden md:inline-block ">
+          <ul class="text-lg text-gray-700  flex gap-6 font-bold " >
+            <li>Home</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <div class="flex flex-col  md:justify-around lg: justify-around items-center mt-16">
+        <div>
+          <h1 class="text-7xl text-black font-normal">
+            <span class="text-[#FABE4C]">Be the pandas</span><br />
+            of the winter
+          </h1>
+          <p class="text-lg text-left my-2">
+            Get the latest Fashion. Wear the latest fashion. Be the cutest of
+            the winter.
+          </p>
+          <button
+            class="bg-green-600 py-4 px-9 rounded-xl text-white font-medium flex gap-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+            Buy Now
+          </button>
+        </div>
+
+        <div>
+          <img src="./Resources/images/model.png" alt="a beautiful model" class="w-full" />
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
-</body>
+  </body>
 </html>
