@@ -3,22 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- For tailwind    -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- For Google Font: Roboto and bebas neue  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Panda Fashion Brand :: Home Page</title>
+    <!-- Creating a class fot font to use like tailwind class -->
+    <style>
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
 
-
-
   <body>
-    <header class="bg-[#FFFBF0] px-10 py-8 md:px-32 ">
+    <header class="bg-[#FFFBF0] px-10 py-8 md:px-32">
       <!-- nav section  -->
-      <nav class="flex justify-between">
-        <div class="flex gap-5"><img src="./Resources/icons/pand logo.png  " alt="Panda our logo" class="w-12">
-           
-            <p class="text-black font-bold text-3xl"> <span class="text-[#A4BC46] font-bold text-3xl">Panda </span>Fashion</p>
+      <nav class="flex justify-around gap-4">
+        <div class="flex gap-5">
+          <img
+            src="./Resources/icons/pand logo.png  "
+            alt="Panda our logo"
+            class="w-12"
+          />
+
+          <p class="text-black font-bold text-3xl">
+            <span class="text-[#A4BC46] font-bold text-3xl">Panda </span>Fashion
+          </p>
         </div>
-        <div class="hidden md:inline-block ">
-          <ul class="text-lg text-gray-700  flex gap-6 font-bold " >
+        <div class="hidden md:inline-block lg:inline-block">
+          <ul class="text-lg text-gray-700 flex gap-6 font-bold">
             <li>Home</li>
             <li>Product</li>
             <li>About Us</li>
@@ -27,13 +49,15 @@
         </div>
       </nav>
       <!-- banner section -->
-      <div class="flex flex-col  md:justify-around lg: justify-around items-center mt-16">
+      <div
+        class="flex flex-col md:flex-row lg: flex-row justify-around items-center mt-14"
+      >
         <div>
-          <h1 class="text-7xl text-black font-normal">
+          <h1 class="text-7xl text-black font-normal font-bebas">
             <span class="text-[#FABE4C]">Be the pandas</span><br />
             of the winter
           </h1>
-          <p class="text-lg text-left my-2">
+          <p class="text-lg text-left my-6 font-bebas">
             Get the latest Fashion. Wear the latest fashion. Be the cutest of
             the winter.
           </p>
@@ -59,11 +83,139 @@
         </div>
 
         <div>
-          <img src="./Resources/images/model.png" alt="a beautiful model" class="w-full" />
+          <img
+            src="./Resources/images/model.png"
+            alt="a beautiful model"
+            class="w-full"
+          />
         </div>
       </div>
     </header>
-    <main></main>
+
+    <main class="max-w-6xl mx-auto">
+      <!-- Women's jacket section  -->
+      <section class="mt-20 space-y-10">
+        <h3 class="font-bebas text-5xl">Women's Jacket</h3>
+        <!-- w.jacket conatiner  -->
+         <div>  <!-- jacket 1 -->
+        <div>
+          
+          <div class="font-roboto space-y-3">
+            <div class="bg-[#F1F1F1]">
+              <img
+                src="./Resources/images/jacket-1.png"
+                alt="a yeallow jacket for woman"
+              />
+            </div>
+          </div>
+          <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, quo.
+          </p>
+          <div class="flex justify-between">
+            <p class="text-4xl text-[#fabe4c] font-black">$234</p>
+            <button
+              class="bg-green-600 py-4 px-9 rounded-xl text-white font-medium flex gap-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="white"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <!-- jacket 2 -->
+        <div>
+          
+          <div class="font-roboto space-y-3">
+            <div class="bg-[#F1F1F1]">
+              <img
+                src="./Resources/images/jacket-1.png"
+                alt="a yeallow jacket for woman"
+              />
+            </div>
+          </div>
+          <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, quo.
+          </p>
+          <div class="flex justify-between">
+            <p class="text-4xl text-[#fabe4c] font-black">$234</p>
+            <button
+              class="bg-green-600 py-4 px-9 rounded-xl text-white font-medium flex gap-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="white"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Buy Now
+            </button>
+          </div>
+        </div>
+         <!-- jacket 3 -->
+        <div>
+          <div class="font-roboto space-y-3">
+            <div class="bg-[#F1F1F1]">
+              <img
+                src="./Resources/images/jacket-1.png"
+                alt="a yeallow jacket for woman"
+              />
+            </div>
+          </div>
+          <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, quo.
+          </p>
+          <div class="flex justify-between">
+            <p class="text-4xl text-[#fabe4c] font-black">$234</p>
+            <button
+              class="bg-green-600 py-4 px-9 rounded-xl text-white font-medium flex gap-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="white"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Buy Now
+            </button>
+          </div>
+        </div></div>
+       
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
